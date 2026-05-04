@@ -14,7 +14,7 @@ const Footer = () => {
         {/* LEFT */}
         <div className="text-center md:text-left">
           <h3 className="text-white text-xl font-semibold tracking-wide">
-            EduMock
+            Interview Coach
           </h3>
           <p className="text-sm mt-1">
             AI-powered interview simulator for students.
@@ -33,7 +33,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="mailto:edumock.team@gmail.com"
+            href="mailto:interview-coach.team@gmail.com"
             className="hover:text-white hover:scale-105 transition transform"
           >
             Contact
@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* RIGHT */}
         <p className="text-xs text-center md:text-right text-slate-500">
-          © {new Date().getFullYear()} EduMock. All rights reserved.
+          © {new Date().getFullYear()} Interview Coach. All rights reserved.
         </p>
 
       </motion.div>

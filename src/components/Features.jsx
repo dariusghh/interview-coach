@@ -43,7 +43,7 @@ const Features = () => {
           </h2>
 
           <p className="text-slate-300 max-w-2xl mx-auto">
-            EduMock combines AI interview agents, personalized questions,
+            Interview Coach combines AI interview agents, personalized questions,
             and instant evaluation into one simple platform for students.
           </p>
         </motion.div>

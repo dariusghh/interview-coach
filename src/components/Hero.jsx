@@ -35,7 +35,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-slate-300 text-lg mb-8"
           >
-            EduMock helps students prepare for HR and technical interviews through
+            Interview Coach helps students prepare for HR and technical interviews through
             realistic AI simulations, personalized questions, and instant feedback.
           </motion.p>
 
@@ -53,7 +53,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="mailto:edumock.team@gmail.com?subject=Request Demo EduMock&body=Hi, I would like to request a demo for EduMock."
+              href="mailto:interview-coach.team@gmail.com?subject=Request Demo Interview Coach&body=Hi, I would like to request a demo for Interview Coach."
               className="border border-slate-600 hover:border-indigo-400 hover:scale-105 px-6 py-3 rounded-xl font-semibold text-center transition transform"
             >
               Request Demo

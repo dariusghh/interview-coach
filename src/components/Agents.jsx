@@ -2,23 +2,43 @@ import { motion } from "framer-motion";
 
 const agents = [
   {
-    title: "HR / Behavioral Agent",
-    subtitle: "Soft skills and CV-based interview simulation",
+    title: "Orchestrator Agent",
+    subtitle: "Session setup, routing, and interview flow coordination",
     points: [
-      "Analyzes the student’s CV",
-      "Generates personalized HR questions",
-      "Evaluates communication, confidence, and clarity",
-      "Offers improvement suggestions after the interview",
+      "Collects and stores the resume and job description",
+      "Routes the user to the right interview phase",
+      "Keeps track of completed interview stages",
+      "Coordinates handoffs between specialist agents",
     ],
   },
   {
-    title: "Technical Evaluator Agent",
-    subtitle: "Technical problem solving and performance scoring",
+    title: "Behavioral Agent",
+    subtitle: "STAR-method soft skills interview simulation",
     points: [
-      "Generates technical tasks or case studies",
-      "Analyzes the student’s written solution",
-      "Detects incomplete or incorrect answers",
-      "Provides a performance score and feedback",
+      "Asks behavioral questions tailored to the candidate’s background",
+      "Focuses on communication, clarity, and confidence",
+      "Stores the candidate’s answers during the session",
+      "Hands off to the technical interview phase when complete",
+    ],
+  },
+  {
+    title: "Technical Agent",
+    subtitle: "Role-specific technical interview evaluation",
+    points: [
+      "Asks technical questions based on the resume and job description",
+      "Evaluates problem-solving and technical reasoning",
+      "Stores technical answers during the session",
+      "Hands off to the final evaluation phase",
+    ],
+  },
+  {
+    title: "Summarizer Agent",
+    subtitle: "Final assessment and improvement recommendations",
+    points: [
+      "Reviews the full interview session",
+      "Summarizes strengths and weaknesses",
+      "Evaluates behavioral and technical performance",
+      "Provides concrete improvement suggestions",
     ],
   },
 ];
@@ -27,8 +47,6 @@ const Agents = () => {
   return (
     <section id="agents" className="bg-slate-900 text-white py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        
-        {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,33 +55,31 @@ const Agents = () => {
           className="text-center mb-14"
         >
           <p className="text-indigo-400 font-semibold mb-3">
-            AI Agents
+            AI Agent System
           </p>
 
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Two AI agents. One complete interview experience.
+            Four AI agents working together for a complete interview flow.
           </h2>
 
           <p className="text-slate-300 max-w-2xl mx-auto">
-            EduMock combines behavioral and technical evaluation to help students
-            prepare for the most important parts of a real job interview.
+            EduMock uses a multi-agent architecture that manages the interview
+            journey from setup and behavioral questions to technical evaluation
+            and final feedback.
           </p>
         </motion.div>
 
-        {/* CARDS */}
         <div className="grid md:grid-cols-2 gap-8">
           {agents.map((agent, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.03 }}
               className="bg-slate-950 border border-slate-800 rounded-2xl p-8 hover:border-indigo-500 transition cursor-default"
             >
-              
-              {/* TOP */}
               <div className="mb-6">
                 <span className="inline-block bg-indigo-500/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                   Agent {index + 1}
@@ -78,7 +94,6 @@ const Agents = () => {
                 </p>
               </div>
 
-              {/* LIST */}
               <ul className="space-y-4">
                 {agent.points.map((point, pointIndex) => (
                   <motion.li
@@ -87,7 +102,7 @@ const Agents = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{
                       duration: 0.4,
-                      delay: 0.3 + pointIndex * 0.1,
+                      delay: 0.25 + pointIndex * 0.08,
                     }}
                     viewport={{ once: true }}
                     className="flex gap-3 text-slate-300"
@@ -97,7 +112,6 @@ const Agents = () => {
                   </motion.li>
                 ))}
               </ul>
-
             </motion.div>
           ))}
         </div>

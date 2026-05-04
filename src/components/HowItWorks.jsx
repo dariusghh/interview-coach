@@ -43,7 +43,7 @@ const HowItWorks = () => {
           </h2>
 
           <p className="text-slate-300 max-w-2xl mx-auto">
-            EduMock makes interview preparation simple, structured, and accessible
+            Interview Coach makes interview preparation simple, structured, and accessible
             for students who want to improve before applying for jobs.
           </p>
         </motion.div>

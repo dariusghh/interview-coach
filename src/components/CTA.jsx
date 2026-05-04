@@ -28,7 +28,7 @@ const CTA = () => {
           viewport={{ once: true }}
           className="text-indigo-100 mb-10 text-lg"
         >
-          Start using EduMock today and improve your confidence before real job interviews.
+          Start using Interview Coach today and improve your confidence before real job interviews.
         </motion.p>
 
         {/* BUTTONS */}
@@ -50,7 +50,7 @@ const CTA = () => {
 
           {/* REQUEST DEMO */}
           <a
-            href="mailto:edumock.team@gmail.com?subject=Request Demo EduMock&body=Hi, I would like to request a demo for EduMock."
+            href="mailto:interview-coach.team@gmail.com?subject=Request Demo Interview Coach&body=Hi, I would like to request a demo for Interview Coach."
             className="border border-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-indigo-600 hover:scale-105 transition transform"
           >
             Request Demo

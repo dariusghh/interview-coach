@@ -5,7 +5,7 @@ const Navbar = () => {
         
         {/* Logo */}
         <div className="text-xl font-bold text-white">
-          EduMock
+          Interview Coach
         </div>
 
         {/* Links */}
@@ -23,7 +23,7 @@ const Navbar = () => {
 
         {/* CTA */}
         <a
-          href="mailto:edumock.team@gmail.com?subject=Request Demo EduMock"
+          href="mailto:interview-coach.team@gmail.com?subject=Request Demo Interview Coach"
           className="bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm font-semibold transition"
         >
           Request Demo
